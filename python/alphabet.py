@@ -1,12 +1,11 @@
 def listAlphabet(pangram):
-    AlphabetLowerCase =  list(map(chr, range(97, 123)))
-    AlphabetUpperCase = list(map(chr, range(65, 90)))
-    print(pangram)
-    for letter in AlphabetLowerCase or AlphabetUpperCase:
-        if letter not in pangram:
+    listAlphabet =  list(map(chr, range(97, 123)))
+    pangramLowerCase = pangram.lower()
+    for letter in listAlphabet:
+        if letter not in pangramLowerCase:
             print('False')
 
     print('True')
 
-pangram = "The quick, brown fox jumps over the lazy dog!"
+pangram = "Cwm fjord bank glyphs vext quiz"
 listAlphabet(pangram)
