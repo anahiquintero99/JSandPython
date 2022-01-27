@@ -1,5 +1,5 @@
 def twoDigits(number):
-    return (f"0:{number}")
+    return (f"0{number}")
 
 
 def time(seconds):
@@ -16,10 +16,10 @@ def time(seconds):
     if mm < 10:
         mm = twoDigits(mm)
     if ss < 10:
-        ss = twoDigits(mm)
+        ss = twoDigits(ss)
 
     print(f"{hh}:{mm}:{ss}")
 
 
-seconds = 86399
+seconds = 3
 time(seconds)
